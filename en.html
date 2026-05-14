@@ -178,8 +178,8 @@
     display:flex;flex-direction:column;align-items:center;gap:2px;line-height:1.2;
   }
   .callbar a .icon{font-size:18px}
-  .callbar a.silvia{background:var(--sea-light);color:var(--sea-deep)}
-  .callbar a.ale{background:var(--sea-light);color:var(--sea-deep)}
+  .callbar a.silvia{background:#dcf8c6;color:#075e54}
+  .callbar a.ale{background:#dcf8c6;color:#075e54}
   .callbar a.help{background:var(--danger-bg);color:var(--danger)}
 
   footer{text-align:center;padding:30px 18px 8px;font-size:13px;color:var(--ink-soft)}
@@ -205,7 +205,7 @@
     <p class="tagline">Overlooking Asinara &amp; Isola Piana</p>
     <div class="hero-cta">
       <a href="https://maps.google.com/?q=Via+Capo+Falcone+11,+Stintino" class="primary">📍 Open in Maps</a>
-      <a href="#contacts">📞 Contacts</a>
+      <a href="#contacts">💬 WhatsApp</a>
     </div>
   </div>
 </header>
@@ -214,7 +214,7 @@
 
   <div class="intro">
     Hi, and welcome! 👋<br>
-    This guide walks you <strong>step by step</strong> through your self check-in. If anything is unclear, our numbers are at the bottom — just tap to call.
+    This guide walks you <strong>step by step</strong> through your self check-in. If anything is unclear, message us on WhatsApp using the buttons at the bottom.
   </div>
 
   <div class="section-title">Check-in step by step</div>
@@ -384,16 +384,22 @@
   <div class="section-title" id="contacts">Contacts</div>
   <section class="step">
     <div class="step-body" style="padding-top:22px">
-      <p style="margin-bottom:14px">For anything you need, call or message us on WhatsApp:</p>
+      <p style="margin-bottom:14px">For anything you need, message us on WhatsApp 👇</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <a href="tel:+393479559919" style="display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:var(--sea-light);border-radius:10px;text-decoration:none;color:var(--ink)">
-          <span><strong>Silvia</strong><br><span style="font-size:14px;color:var(--ink-soft)">Main contact</span></span>
-          <span style="font-family:'SF Mono',Menlo,monospace;color:var(--sea-deep);font-weight:600">+39 347 955 9919</span>
-        </a>
-        <a href="tel:+393467974489" style="display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:var(--sea-light);border-radius:10px;text-decoration:none;color:var(--ink)">
-          <span><strong>Ines</strong></span>
-          <span style="font-family:'SF Mono',Menlo,monospace;color:var(--sea-deep);font-weight:600">+39 346 797 4489</span>
-        </a>
+        <div style="display:flex;gap:8px;align-items:stretch">
+          <a href="https://wa.me/393479559919?text=Hi%20Silvia%2C%20I%27m%20a%20guest%20at%20Casa%20Lai" style="flex:1;display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#dcf8c6;border-radius:10px;text-decoration:none;color:var(--ink)">
+            <span><strong>💬 Silvia</strong><br><span style="font-size:14px;color:var(--ink-soft)">Main contact · WhatsApp</span></span>
+            <span style="font-family:'SF Mono',Menlo,monospace;color:#075e54;font-weight:600;font-size:14px">+39 347 955 9919</span>
+          </a>
+          <a href="tel:+393479559919" aria-label="Call Silvia" style="display:flex;align-items:center;justify-content:center;width:52px;background:var(--sea-light);border-radius:10px;text-decoration:none;font-size:20px">📞</a>
+        </div>
+        <div style="display:flex;gap:8px;align-items:stretch">
+          <a href="https://wa.me/393467974489?text=Hi%20Ines%2C%20I%27m%20a%20guest%20at%20Casa%20Lai" style="flex:1;display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:#dcf8c6;border-radius:10px;text-decoration:none;color:var(--ink)">
+            <span><strong>💬 Ines</strong><br><span style="font-size:14px;color:var(--ink-soft)">WhatsApp</span></span>
+            <span style="font-family:'SF Mono',Menlo,monospace;color:#075e54;font-weight:600;font-size:14px">+39 346 797 4489</span>
+          </a>
+          <a href="tel:+393467974489" aria-label="Call Ines" style="display:flex;align-items:center;justify-content:center;width:52px;background:var(--sea-light);border-radius:10px;text-decoration:none;font-size:20px">📞</a>
+        </div>
         <a href="tel:112" style="display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:var(--danger-bg);border-radius:10px;text-decoration:none;color:var(--danger)">
           <span><strong>Emergencies</strong><br><span style="font-size:14px;color:#7a3225">Police · Ambulance · Fire brigade</span></span>
           <span style="font-size:22px;font-weight:700">112</span>
@@ -410,8 +416,8 @@
 </div>
 
 <nav class="callbar" aria-label="Quick contacts">
-  <a href="tel:+393479559919" class="silvia"><span class="icon">📞</span>Silvia</a>
-  <a href="tel:+393467974489" class="ale"><span class="icon">📞</span>Ines</a>
+  <a href="https://wa.me/393479559919?text=Hi%20Silvia%2C%20I%27m%20a%20guest%20at%20Casa%20Lai" class="silvia"><span class="icon">💬</span>Silvia</a>
+  <a href="https://wa.me/393467974489?text=Hi%20Ines%2C%20I%27m%20a%20guest%20at%20Casa%20Lai" class="ale"><span class="icon">💬</span>Ines</a>
   <a href="tel:112" class="help"><span class="icon">🆘</span>112</a>
 </nav>
 
